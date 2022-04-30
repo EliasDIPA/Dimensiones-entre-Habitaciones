@@ -1,18 +1,20 @@
 Algoritmo Juego
-	Escribir "Bienvenido a ACERTEGI (0.00.002)"
+	Escribir " Bienvenido a..."
+	Esperar 1 Segundos
+	Escribir " Dimenciones entre Habitaciones"
 	Esperar 2 Segundos
-	Escribir "Explicacion:"
-	Escribir "Los controles de este juego son los numeros"
-	Escribir "Cada numero es una Respuesta"
+	Escribir " Explicacion:"
+	Escribir " Los controles de este juego son los numeros"
+	Escribir " Cada numero es una Respuesta"
 	Esperar 3 Segundos
 	Repetir
-		Escribir "Que desea hacer? 1 = Jugar 2 = Creditos"
+		Escribir " Que desea hacer? 1 = Jugar 2 = Creditos"
 		Leer  Menu
 		si Menu = 2 Entonces
 			Repetir
-				Escribir "Creador: Elias Ezequiel Dipace"
-				Escribir "Todos los derechos reservados (2022)"
-				Escribir "0 = Atras" 
+				Escribir " Creador: Elias Ezequiel Dipace"
+				Escribir " Todos los derechos reservados (2022)"
+				Escribir " 0 = Atras" 
 				Leer Atras
 			Hasta Que Atras=0
 		FinSi
@@ -37,8 +39,10 @@ Algoritmo Juego
 					
 				FinSi
 			FinSi
+			Limpiar Pantalla
+			Escribir "___Fin de la Version___"
 		FinSi
-		Escribir "___Fin de la Version___"
+		
 	Hasta Que Falso
 	
 FinAlgoritmo
