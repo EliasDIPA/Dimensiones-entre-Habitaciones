@@ -13,7 +13,7 @@ Algoritmo Juego
 				Escribir "Creador: Elias Ezequiel Dipace"
 				Escribir "Todos los derechos reservados (2022)"
 				Escribir "0 = Atras" 
-				Leer Atra
+				Leer Atras
 			Hasta Que Atras=0
 		FinSi
 		si Menu = 1 Entonces
