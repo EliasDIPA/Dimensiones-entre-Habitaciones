@@ -33,23 +33,7 @@ Algoritmo Juego
 				Escribir " 1 = Ver el mueble 2 = Pasar a la siguiente puerta 3 = Ver el televisor"
 				Leer Respuesta1
 				
-				Repetir
-					
-					si Respuesta1 = 1 Entonces
-						Escribir " Uff, esta lleno de polvo, tiene 3 Cajones"
-						Escribir " 2 = Pasar a la siguiente puerta 3 = Ver el televisor"
-						Leer Respuesta1
-					FinSi
-					si Respuesta1 = 3 Entonces
-						Escribir " Un televisor muy antiguo, de los 80s masomenos"
-						Escribir " 1 = Ver el mueble  2 = Pasar a la siguiente puerta"
-						Leer Respuesta1
-					FinSi
-				Hasta Que Respuesta1 = 2
-				Si Respuesta1 = 2 Entonces
-					Escribir " Otra Habitacion vacia, pero con 3 puertas en cada pared"
-					Escribir " En total contando por la que entre, son 4 paredes y 4 puertas"
-				FinSi
+				
 				
 				
 			FinSi
