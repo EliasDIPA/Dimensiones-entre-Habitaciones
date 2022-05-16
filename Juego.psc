@@ -58,25 +58,32 @@ Algoritmo Juego
 							Escribir ' Pero...'
 							Escribir ' No saliste a la calle!!'
 							Escribir ' Estas en una  habitacion con 3 puertas en cada pared'
-							Escribir ' En total cuatro paredes y cuatro puertas'
+							Escribir " En total contando por la que entre, son 4 paredes y 4 puertas"
 							Escribir ' 1 = Entrar a la puerta N°1 | 2 = Entrar a la puerta N°2 | 3 = Entrar a la puerta N°3'
 							Leer Respuesta3
 						FinSi
 					FinSi
 			FinSegun
-			
-			
-			
-			Segun Respuesta2 o Respuesta1_2 Hacer
-				1:
-					
-				2:
-					
-					Escribir ' 1 = Entrar a la puerta N°1 | 2 = Entrar a la puerta N°2 | 3 = Entrar a la puerta N°3'
-					Leer Respuesta3
-				3:
-					
-			FinSegun
+			Repetir
+				Segun Respuesta1 Hacer
+					1:
+						Escribir " Uff, esta lleno de polvo, tiene 3 Cajones"
+						Escribir " 2 = Pasar a la siguiente puerta 3 = Ver el televisor"
+						Leer Respuesta1
+					2:
+						Escribir " Otra Habitacion vacia, pero con 3 puertas en cada pared"
+						Escribir " En total contando por la que entre, son 4 paredes y 4 puertas"
+						leer Respuesta2
+					3:
+						Escribir " Un televisor muy antiguo, de los 80s masomenos"
+						Escribir " 1 = Ver el mueble  2 = Pasar a la siguiente puerta"
+						Leer Respuesta1
+					De Otro Modo:
+						Escribir ni
+						Escribir " 1 = Ver el mueble 2 = Pasar a la siguiente puerta 3 = Ver el televisor"
+						Leer Respuesta1
+				Fin Segun
+			Hasta Que Respuesta1 = 2
 			Borrar Pantalla
 			Segun Respuesta3 Hacer
 				1:
