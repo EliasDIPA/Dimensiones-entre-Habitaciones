@@ -2,9 +2,9 @@
 
 En mi ultimo año de escuela, el profesor de Itinerario (computacion) nos esta enseñando a programar algoritmos en Pseint, luego de dos clases, se me ocurrio programar un juego usando este lenguaje en español, de esta manera aprovechando los horarios libres que tengo en esta materia, y en ratos fuera de la escuela, desarollo este juego de historia controlado por los numeros,sin imagenes ni botones, solo texto como los primeros videojuegos...
 
-# Dimenciones entre Habitaciones
+# Dimensiones entre Habitaciones
 
-Dimenciones entre Habitaciones es un juego de texto con una historia, el cual te guia por distintas dimenciones desconocidas, donde eliges que camino seguir, segun la respuesta que selecciones.
+Dimensiones entre Habitaciones es un juego de texto con una historia, el cual te guia por distintas dimenciones desconocidas, donde eliges que camino seguir, segun la respuesta que selecciones.
 
 # Info del juego
 
