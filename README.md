@@ -8,7 +8,7 @@ Dimensiones entre Habitaciones es un juego de texto con una historia, el cual te
 
 # Info del juego
 
-Actualmente se encuentra en la version 0.00.07
+Actualmente se encuentra en la version 0.00.08
 
 Seguire actualizando el juego y subiendo nuevas versiones.
 
