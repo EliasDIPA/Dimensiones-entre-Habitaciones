@@ -14,12 +14,13 @@ Algoritmo Juego
 	Escribir ' Cada numero es una Respuesta'
 	Esperar 3 Segundos
 	Repetir
-		Escribir ' Que desea hacer?'
+		Escribir ' ¿Que desea hacer?'
 		Escribir ' 1 = Jugar | 2 = Creditos'
 		Leer Menu
 		Si Menu=2 Entonces
 			Repetir
 				Escribir ' Creador: Elias Ezequiel Dipace'
+				Escribir ' Version 0.00.09 '
 				Escribir 'Codigo Abierto (2022)'
 				Escribir ' 0 = Atras'
 				Leer Atras
@@ -62,7 +63,7 @@ Algoritmo Juego
 						Leer Respuesta1
 					De Otro Modo:
 						Escribir ni
-						Leer Respuesta0 /// RECORDAR
+						Leer Respuesta0
 				FinSegun
 			Hasta Que Respuesta1=1 O Respuesta1=2 O Respuesta1=3
 			Repetir
@@ -83,7 +84,6 @@ Algoritmo Juego
 						Leer Respuesta1
 					De Otro Modo:
 						Escribir ni
-						Escribir ' 1 = Ver el mueble 2 = Pasar a la siguiente puerta 3 = Ver el televisor'
 						Leer Respuesta1
 				FinSegun
 			Hasta Que Respuesta2=1 O Respuesta2=2 O Respuesta2=3
@@ -155,6 +155,9 @@ Algoritmo Juego
 									Escribir ('Un momento, parece como si la puerta te persiguiera..')
 									Esperar 1 Segundos
 									Escribir ('Creo que tendras que entrar por la puerta...')
+								De Otro Modo:
+									Escribir ni
+									Leer RespuestaD1
 							FinSegun
 							Esperar 1 Segundos
 							Escribir ('Entrando por la puerta...')
@@ -208,8 +211,8 @@ Algoritmo Juego
 												Leer RespuestaD1
 											Hasta Que RespuestaD1=1
 										2:
-											//DETENERSE
-											Escribir ('Te detienes') 
+											// DETENERSE
+											Escribir ('Te detienes')
 											Esperar 1 Segundos
 											Escribir ('El Triceratops enfrento al T-rex')
 											Esperar 1 Segundos
@@ -219,9 +222,15 @@ Algoritmo Juego
 											Escribir ('El peligro ah desaparecido')
 											Esperar 2 Segundos
 											Escribir ('1 = Regresar a buscar la puerta | 2 = ')
+										De Otro Modo:
+											Escribir ni
+											Leer RespuestaD1
 									FinSegun
 								3:
 									Escribir (' ')
+								De Otro Modo:
+									Escribir ni
+									Leer RespuestaD1
 							FinSegun
 						3:
 							///TIRARSE AL SUELO
@@ -229,7 +238,7 @@ Algoritmo Juego
 							Leer RespuestaD1
 						De Otro Modo:
 							Escribir ni
-							Escribir ' 1 = Correr | 2 = Volver a entrar a la puerta | 3 = Tirarse al suelo'
+							Leer RespuestaD1
 					FinSegun
 				2:
 					Escribir ' Estas abriendo a la Puerta 2...'
@@ -239,8 +248,28 @@ Algoritmo Juego
 					Escribir ' Esta abriendo a la Puerta 3...'
 					Esperar 1 Segundos
 					Escribir ' '
+				De Otro Modo:
+					Escribir ni
+					Leer Respuesta2
 			FinSegun
-			Escribir i
+			/// Dimensiones sin fin
+			Repetir
+				Escribir ("Estas en una habitacion con cuatros paredes y cuatro puertas")
+				Escribir ("Muy parecida a la anterior")
+				Escribir ("¿O sera la misma?")
+				Escribir (' 1 = Entrar a la puerta N°1 | 2 = Entrar a la puerta N°2 | 3 = Entrar a la puerta N°3 | 4 = Volver por donde entraste')
+				Leer A
+				Segun Azar(3) Hacer
+					1:
+						
+					2:
+						
+						
+					3:
+					De Otro Modo:
+						
+				FinSegun
+			Hasta Que i=E
 			Esperar 2 Segundos
 			Borrar Pantalla
 			Escribir '___Fin de la Version___'
