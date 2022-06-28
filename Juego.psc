@@ -221,20 +221,97 @@ Algoritmo Juego
 											Esperar 2 Segundos
 											Escribir ('El peligro ah desaparecido')
 											Esperar 2 Segundos
-											Escribir ('1 = Regresar a buscar la puerta | 2 = ')
+											Escribir ('1 = Regresar a buscar la puerta | 2 = Seguir caminando')
+											Leer RespuestaD1
+											Segun RespuestaD1 Hacer
+												1:
+													Escribir ("Regresas...")
+													Esperar 3 Segundos
+													Escribir ("Encuentras la puerta")
+													Esperar  2 Segundos
+													Escribir ("Entras por ella")
+												2:
+													Escribir ("Sigues caminando...")
+													Escribir ("Te encuentras un nido con huevos de gran tamaño")
+													Escribir ("Sigues caminando...")
+													Escribir ("Ves una puerta a lo lejos")
+													Escribir ("Te acercas...")
+													Escribir ("Entras por la puerta")
+												De Otro Modo: ///HEY
+											Fin Segun
 										De Otro Modo:
 											Escribir ni
 											Leer RespuestaD1
 									FinSegun
 								3:
-									Escribir (' ')
+									Escribir (' Te tiras al suelo')
+									Escribir ("El T-rex se acerca")
+									Escribir ("Te esta obsevando")
+									Escribir ("1 = Quedarse quieto | 2 = Enfrentarlo")
+									Leer RespuestaD1
+									Segun RespuestaD1 Hacer
+										1:
+											Escribir (" El T-Rex te huele")
+											Escribir (" El T-Rex te Ruge desafiante")
+											Escribir ("1 = Quedarse quieto | 2 = Enfrentarlo")
+											Leer RespuestaD1
+											Segun RespuestaD1 Hacer
+												1:
+													Escribir ("Te quedas quieto...")
+													Escribir ("El T- rex da media vuelta y se aleja")
+													Escribir ("Te levantas")
+													Escribir ("La puerta reaparece")
+													Escribir ("1 = Entrar | 2 = Observar el lugar")
+													Leer RespuestaD1 
+													Segun RespuestaD1 Hacer
+														1:
+															Escribir ("Entras por la puerta...")
+														2:
+															Escribir (" ") //Continuar
+														De Otro Modo: Escribir ni
+															Leer RespuestaD1
+													Fin Segun
+												2:
+													Escribir (" ") //Continuar
+												De Otro Modo: Escribir ni
+													Leer RespuestaD1
+											Fin Segun
+										2:
+											Escribir (" ") //Continuar
+										De Otro Modo: Escribir ni
+											Leer RespuestaD1
+									Fin Segun
 								De Otro Modo:
 									Escribir ni
 									Leer RespuestaD1
 							FinSegun
 						3:
 							///TIRARSE AL SUELO
-							Escribir (' ')
+							Escribir (' Te tiras al suelo')
+							Escribir (" El T-rex se acerca")
+							Escribir ("1 = Quedarse quieto | 2 = Levantarse")
+							Leer RespuestaD1
+							Segun RespuestaD1 Hacer
+								1:
+									Escribir (" El T-rex se sigue acercando a toda velocidad")
+									Escribir (" Pasa por al lado no te ah detectado...")
+									Escribir (" El T-rex se aleja...")
+									Escribir (" 1 = Entrar por la puerta | 2 = Observar el lugar")
+									Leer RespuestaD1
+									Segun RespuestaD1 Hacer
+										1:
+											Escribir ("Entras por la puerta...")
+										2:
+											Escribir ("Observas detenidamente")
+											Escribir ("La puerta ah desaparecido...") //Continuar
+										De Otro Modo:
+											
+									Fin Segun
+								2:
+									Escribir (" ") //Continuar
+								De Otro Modo: 
+									
+							Fin Segun
 							Leer RespuestaD1
 						De Otro Modo:
 							Escribir ni
@@ -242,8 +319,61 @@ Algoritmo Juego
 					FinSegun
 				2:
 					Escribir ' Estas abriendo a la Puerta 2...'
+					Escribir (' ")
 					Esperar 1 Segundos
-					Escribir ' '
+					Escribir ' Entras a un tipo de tunel oscuro."
+					Escribir ' Lo unico que ilumina son luces azules'
+					Esperar 2 Segundos
+					Escribir ' Las paredes son totalmente negras'
+					Esperar 3 Segundos
+					Escribir ' Un momento, a lo lejos se distingue una esfera blanca'
+					Esperar 2 Segundos
+					Escribir (" 1 = Acercarse a la esfera | 2 = Quedarse quieto | 3 = Alejarse de las esferas")
+					Leer RespuestaD2
+					Segun RespuestaD2 Hacer
+						1:
+							Escribir (" Enpiezas a caminar...")
+							Escribir ("Pero no sientes las piernas...")
+							Escribir ("Avanzas, pero sientes que flotas")
+							Escribir ("1 = Seguir caminando | 2 = Mirar hacia tus pies")
+							Leer RespuestaD2
+							Segun RespuestaD2 Hacer
+								1:
+									Escribir ("Sigues caminando...") //Continuar
+								2:
+									Escribir ("Miras abajo, buscas tus pies")
+									Escribir ("Pero no hay nada, solo el piso totalmente negro")
+									Escribir ("Aun asi te mueves")
+									Escribir ("Mejor dicho, avanzas")
+									Escribir (" ") // Continuar
+								De Otro Modo:
+									
+							Fin Segun
+						2:
+							Escribir (" Te quedas quieto")
+							Escribir ("Miras a tu alrededor...")
+							Escribir ("No hay nada mas que es unas esferas a lo lejos")
+							Escribir ("Espera, ah aparecido un especie de personaje")
+							Escribir ("Ah doblado hacia el tunel en donde te encuentras...")
+							Escribir ("Es totalmente Rojo, No tiene ni manos")
+							Escribir ("Ni piernas, Ni cuerpo, solo la cara y los ojos")
+							Escribir ("y parece que flotara, pero avanza")
+							Escribir ("Y se acerca!!")
+							Escribir ("1 = Quedarse quieto | 2 = Correr")
+							Leer RespuestaD2
+							Segun RespuestaD2 Hacer
+								1:
+									Escribir (" ") //Continuar
+								2:
+									Escribir (" ") //Continuar
+								De Otro Modo:
+									
+							Fin Segun
+						3:
+							Escribir (" ")
+						De Otro Modo:
+							
+					Fin Segun
 				3:
 					Escribir ' Esta abriendo a la Puerta 3...'
 					Esperar 1 Segundos
